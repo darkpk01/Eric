@@ -1,0 +1,58 @@
+{
+	"products": [
+		{
+			"name": "AWP Vibora",
+			"price": "159.99",
+			"options": [],
+			"image": "images/arma1.jpg",
+			"description": "Esta arma foi pintada com um hidrográfico com um padrão de pele de cobra. Elian pescou no rio"
+		},
+		{
+			"name": "Ak-47",
+			"price": "89.00",
+			"options": [
+				{
+					"OneOfAKind": true
+				}
+			],
+			"image": "images/arma2.jpg",
+			"description": "Esta arma foi pintada usando uma combinação de hidrográficos e cuidadosamente detalhada com estênceis de transferência térmica"
+		},
+		{
+			"name": "P250-Ondulação",
+			"price": "29.99",
+			"options": [],
+			"image": "images/arma3.jpg",
+			"description": "Esta arma foi pintada de preto e então revestida com um padrão anodizado em tons cinzas e azuis"
+		},
+		{
+			"name": "Five-Seven",
+			"price": "29.99",
+			"options": [
+				{
+					"OneOfAKind": true
+				}
+			],
+			"image": "images/arma5.jpg",
+			"description": "Altamente precisa e perfurante, a Five-Seven é cara e lenta para recarregar, porém compensa com o seu pente de 20 balas e um coice generoso"
+		},
+		{
+			"name": "Mac 10",
+			"price": "59.99",
+			"options": [
+				{
+					"OneOfAKind": true
+				}
+			],
+			"image": "images/arma4.jpg",
+			"description": "Esta arma foi pintada para parecer que acabou de sair da forja. Deixe você também a sua marca"
+		},
+		{
+			"name": "G3SG1",
+			"price": "39.99",
+			"options": [],
+			"image": "images/arma6.jpg",
+			"description": " Esta arma foi pintada usando um hidrográfico de camuflagem de ártico."
+		}
+	]
+}

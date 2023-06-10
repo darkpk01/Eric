@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<HTML lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>DevGuns Skins</title>
+    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+    <script src="_javascript/funcoes.js"></script>
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/imports.min.css">
+    <link rel="stylesheet" href="css/simpleStore.min.css">
+
+</head>
+
+<body onload="mudaFoto('_imagens/loja.png')">
+    <div id="interface">
+
+        <header id="cabecalho" style="height: 180px;">
+
+            <hgroup>
+                <h1 style="padding: 30px; margin-left: -40px;"><a href="home.html" class="titulo"
+                        style="color: #606060;">DevGuns
+                        Skins</a></h1>
+
+
+            </hgroup>
+            <img id="icone" src="_imagens/branco.png">
+            <nav id="menu">
+                <h1> Menu Principal</h1>
+                <ul type="disc" style="top: 0px; position: absolute; left: 855px;;">
+                    <li onmouseover="mudaFoto('_imagens/home1.png')" onmouseout="mudaFoto('_imagens/loja.png')"><a
+                            href="home.html">Home</a></li>
+                    <li onmouseover="mudaFoto('_imagens/loja.png')" onmouseout="mudaFoto('_imagens/loja.png')"><a
+                            href="loja.html">Loja</a></li>
+
+                    <li onmouseover="mudaFoto('_imagens/faleconosco.png')" onmouseout="mudaFoto('_imagens/loja.png')">
+                        <a href="fale-conosco.html">Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="corpo-full">
+            <article id="noticia-principal">
+                <header id="cabecalho-artigo">
+                    <hgroup>
+                        <h3> Skins > Loja</h3>
+                        <h1>Boas compras!</h1>
+                        <h2>Por Dev Fatece</h2>
+                        <h3 class="direita"> Atualizado em Junho/2020</h3>
+                    </hgroup>
+                </header>
+
+            </article>
+        </section>
+
+        <!-- Primary Page Layout
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <div class="container simpleStore">
+            <div class="row">
+                <a class="brand" href="#"></a>
+                <a class="button button-primary u-pull-right simpleStore_viewCart">
+                    <i class="fa fa-shopping-cart"></i> Carrinho <span class="simpleCart_total"></span>
+                </a>
+            </div>
+            <div class="simpleStore_container"></div>
+            <div class="simpleStore_cart_container"></div>
+        </div>
+
+        <!-- Templates
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <!-- Products View -->
+        <script id="products-template" type="x-template">
+        <div class="column">
+            <div class="simpleCart_shelfItem">
+                <img src="" class="item_thumb"/>
+                <div class="row">
+                    <h5 class="item_name"></h5>
+                    <div class="simpleStore_getDetail_container">
+                        <span class="item_price"></span>
+                    </div>
+                    <div class="simpleStore_getDetail_container">
+                        <a class="button u-pull-right simpleStore_getDetail">Detalhe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+        <!-- Product Detail View -->
+        <script id="product-detail-template" type="x-template">
+        <div class="simpleCart_shelfItem simpleStore_detailView">
+            <a href="#" class="close view_close">&times;</a>
+
+            <div class="row">
+                <div class="four columns">
+                    <img src="" class="item_thumb"/>
+                </div>
+                <div class="eight columns">
+                    <h5 class="item_name"></h5>
+
+                    <p class="item_description"></p>
+                    <span class="item_price"></span>
+
+                    <div class="qty">
+                        <label>Quantidade</label>
+                        <input type="number" value="1" min="1" step="1" class="item_Quantity">
+                    </div>
+                    <div class="simpleStore_options"></div>
+                    <a class="item_add button u-pull-right" href="javascript:;">Adicionar ao Carrinho</a>
+                </div>
+            </div>
+        </div>
+    </script>
+
+        <!-- Cart View -->
+        <script id="cart-template" type="x-template">
+        <div class="simpleStore_cart">  
+            <h2>Carrinho</h2>
+            <a href="#" class="close">&times;</a>
+
+            <div class="row">
+                <div class="eight columns">
+                    <div class="simpleCart_items"></div>
+                    <a href="javascript:;" class="simpleCart_empty u-pull-left">Empty Cart <i class="fa fa-trash-o"></i></a>
+                </div>
+                <div class="four columns">
+                    <div class="cart_info">
+                        <div class="cart_info_item cart_itemcount">Items:
+                            <div class="simpleCart_quantity"></div>
+                        </div>
+                        
+                       
+                        <div class="cart_info_item cart_total"><b>Total:
+                            <div class="simpleCart_grandTotal"></div>
+                        </b></div>
+                        <a href="javascript:;" class="button button-primary simpleStore_checkout u-pull-right">Finalizar Compra <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
+
+
+
+        <!-- Error View -->
+        <script id="error-template" type="x-template">
+        <div class="error">
+            <b>Sorry, something went wrong :(</b>
+			<p class="error_text"></p>
+			<a href="#" class="close alert_close">&times;</a>
+        </div>
+    </script>
+        <footer id="rodape">
+            <p> Copyright &copy; 2020 - by Dev Fatece <br>
+            </p>
+
+        </footer>
+    </div>
+</body>
+
+<!-- Scripts
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/simpleCart.min.js"></script>
+<script src="js/simpleStore.min.js"></script>
+
+<script src="js/config.js"></script>
+
+</HTML>

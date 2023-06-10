@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+div#tv-radio{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+video#trailer{
+    display: block;
+    position: relative;
+  right: 130px;
+    top: 0px;
+    width: 360px;
+    height: 180px;
+    border: 2px solid white;
+        box-shadow: 1px 1px 1px black;}
